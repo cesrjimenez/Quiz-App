@@ -1,0 +1,430 @@
+body {
+	background-color: white;
+	background: url('../data/cool-brain-green.jpg') no-repeat center center fixed; 
+ 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.overlay {
+	height: 98%;
+	width: 100%;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	bottom: 5px;
+	right: 5px;
+	background: url('../data/cool-brain-pink.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 2;	
+	border-radius: 5px;
+	display: none;
+}
+
+.insideOverlay {
+	position: absolute;
+	top: 8%;
+	left: 17%;
+	height: 600px;
+	width: 900px;
+	border-radius: 5px;
+	-moz-box-shadow: 3px 3px 5px 6px black;
+	-webkit-box-shadow: 3px 3px 5px 6px black;
+	box-shadow: 3px 3px 5px 6px black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.insideOverlay h3 {
+	font-family: "Saving";
+	font-size: 50px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 60px;	
+}
+
+.insideOverlay p {
+	font-family: "Saving";
+	font-size: 26px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 65px;	
+}
+
+.finalResults h3 {
+	font-family: "Saving";
+	font-size: 50px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 25px;	
+}
+
+.finalResults p {
+	font-family: "Saving";
+	font-size: 26px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 40px;	
+}
+
+.insideInsideOverlay {
+	height: 500px;
+	width: 635px;
+	position: absolute;
+	left: 135px;
+	line-height: 28px;
+	letter-spacing: 0.4px;
+}
+
+.outerOuterCase {
+	height: 600px;
+	width: 900px;
+  	position: fixed;
+  	top: 8%;
+  	left: 17%;
+  	background-color: #000000;
+  	opacity: .5;
+  	-moz-box-shadow:    3px 3px 5px 6px black;
+  	-webkit-box-shadow: 3px 3px 5px 6px black;
+  	box-shadow:         3px 3px 5px 6px black;
+  	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+}
+
+.outerCase {
+	height: 600px;
+	width: 900px;
+  	position: fixed;
+  	top: 8%;
+  	left: 17%;
+	-moz-box-shadow:    3px 3px 5px 6px black;
+  	-webkit-box-shadow: 3px 3px 5px 6px black;
+  	box-shadow:         3px 3px 5px 6px black;
+  	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+}
+
+.title {
+	height: 100px;
+	width: 900px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+}
+
+@font-face {
+	font-family: "Saving";
+	src: url('../data/saving.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "EleganTech"; 
+	src: url('../data/elegantech.ttf') format('truetype');
+}
+
+h1 {
+	position: relative;
+	top: 20px;
+	z-index: 2;
+	font-family: "Saving";
+	font-size: 75px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+h3,
+h2 {
+	font-family: "Saving";
+	font-size: 35px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+}
+
+.question,
+.option1,
+.option2,
+.results {
+	font-family: "EleganTech";
+	font-size: 45px;
+	text-align: center;
+	color: white;
+}
+
+.what:hover,
+.newGame:hover {
+	color: #070719;
+}
+
+.Button-2:hover,
+.Button-1:hover {
+	background-color: #070719;
+	color: white;
+}
+
+.Button-2 p:hover,
+.Button-1 p:hover {
+	color: white;
+	text-shadow: none;
+}
+
+.option1:hover,
+.option2:hover {
+	background-color: #070719;
+	color: white;
+}
+
+.option1 p:hover,
+.option2 p:hover {
+	color: white;
+	text-shadow: none;
+}
+
+.results:hover{
+	background-color: #070719;
+	color: white;
+}
+
+.results p:hover{
+	color: white;
+	text-shadow: none;
+}
+
+.what {
+	position: relative;
+	float: left;
+	top: 10px;
+	left: 20px;
+	color: white;
+	cursor: help;
+	z-index: 3;
+}
+
+.newGame {
+	position: relative;
+	float: right;
+	top: 10px;
+	right: 40px;
+	color: white;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.question {
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
+.option1, 
+.option2, 
+.results {
+	position: absolute;
+	display: table;
+	top: 370px;
+	height: 70px;
+	width: 170px;
+	background-color: white;
+	border-radius: 15px;
+	opacity: 2.5;
+	border: black solid 2px;
+}
+
+.option1 p, 
+.option2 p {
+	font-size: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: black;
+	text-shadow: 1px 1px 1px white;
+}
+
+.option1 {
+	left: 200px;	
+}
+
+.option2 {
+	right: 200px;
+}
+
+.a1, .b1, .c1, .d1, .e1,
+.a2, .b2, .c2, .d2, .e2,
+.a3, .b3, .c3, .d3, .e3,
+.a4, .b4, .c4, .d4, .e4,
+.resultBox {
+	display: none;
+}
+
+.results {
+	position: absolute;
+	display: table;
+	top: 250px;
+	left: 350px;
+	height: 85px;
+	width: 185px;
+	background-color: white;
+	border-radius: 15px;
+	opacity: 2.5;
+	border: black solid 2px;
+}
+
+.results p {
+	font-size: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: black;
+	text-shadow: 1px 1px 1px white;
+}
+
+.ISTJ, .ISTP, .ESTP, .ESTJ,
+.ISFJ, .ISFP, .ESFP, .ESFJ,
+.INFJ, .INFP, .ENFP, .ENFJ,
+.INTJ, .INTP, .ENTP, .ENTJ {
+	position: absolute;
+	height: 570px;
+	width: 875px;
+	left: 10px;
+	top: 30px;
+	border-radius: 15px;
+	color: white;
+	display: none;
+}
+
+.ISTJ h3, .ISTJ p,
+.ISTP h3, .ISTP p,
+.ESTP h3, .ESTP p,
+.ESTJ h3, .ESTJ p,
+.ISFJ h3, .ISFJ p,
+.ISFP h3, .ISFP p,
+.ESFP h3, .ESFP p,
+.ESFJ h3, .ESFJ p,
+.INFJ h3, .INFJ p,
+.INFP h3, .INFP p,
+.ENFP h3, .ENFP p,
+.ENFJ h3, .ENFJ p,
+.INTJ h3, .INTJ p,
+.INTP h3, .INTP p,
+.ENTP h3, .ENTP p,
+.ENTJ h3, .ENTJ p {
+	font-family: "Saving";
+	font-size: 25px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.ISTJ a,
+.ISTP a,
+.ESTP a,
+.ESTJ a,
+.ISFJ a,
+.ISFP a,
+.ESFP a,
+.ESFJ a,
+.INFJ a,
+.INFP a,
+.ENFP a,
+.ENFJ a,
+.INTJ a,
+.INTP a,
+.ENTP a,
+.ENTJ a {
+	font-family: "Saving";
+	font-size: 28px;
+	color: rgb(241, 233, 41);
+	position: relative;
+	left: 380px;
+	top: 70px;
+	text-shadow: 1px 1px 1px black;
+	letter-spacing: 1px;
+}
+
+.ISTJ a:hover,
+.ISTP a:hover,
+.ESTP a:hover,
+.ESTJ a:hover,
+.ISFJ a:hover,
+.ISFP a:hover,
+.ESFP a:hover,
+.ESFJ a:hover,
+.INFJ a:hover,
+.INFP a:hover,
+.ENFP a:hover,
+.ENFJ a:hover,
+.INTJ a:hover,
+.INTP a:hover,
+.ENTP a:hover,
+.ENTJ a:hover {
+	color: #F5FAF5;
+}
+
+.start {
+	position: absolute;
+	display: table;
+	height: 60px;
+	width: 145px;
+	background-color: white;
+	border-radius: 15px;
+	opacity: 2.5;
+	border: black solid 2px;
+}
+
+.start p {
+	font-family: "EleganTech";
+	font-size: 25px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: black;
+	text-shadow: 1px 1px 1px white;
+}
+
+.Button-1 {
+	top: 350px;
+	left: 620px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.Button-2 {
+	top: 570px;
+	left: 620px;
+	cursor: pointer;
+}
+
+.overlayResults {
+	height: 98%;
+	width: 100%;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	bottom: 5px;
+	right: 5px;
+	background: url('../data/cool-brain-pink.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 2;	
+	border-radius: 5px;
+	display: none;
+}
+
