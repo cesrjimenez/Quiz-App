@@ -127,10 +127,10 @@ body {
 	border-radius: 5px; /* future proofing */
 }
 
-/*@font-face {*/
-/*	font-family: "Saving";*/
-/*	src: url('../data/saving.ttf') format('truetype');*/
-/*}*/
+@font-face {
+	font-family: "Saving";
+	src: url('../data/saving.ttf') format('truetype');
+}
 
 @font-face {
 	font-family: "EleganTech"; 
